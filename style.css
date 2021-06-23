@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    scroll-behavior: smooth;
+    transition: 0.5s ease-in;
+}
+:root{
+    --primary-color: #fcf704;
+    --secondary-color:#ccc;
+    --bg-color:#101010;
+    --smoke:whitesmoke;
+}
+aside{
+    margin: 10px 0;
+    color: var(--primary-color);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 8px #FF0000;
+}
+p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+figure{
+    position: relative;
+}
+figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+article .first:first-of-type:first-letter{
+    color: var(--primary-color);
+	float: left;
+	font-size: 3em;
+	line-height: 1;
+	/* margin-top: -0.2em;
+	margin-bottom: -0.2em;
+	margin-right: 0.1em; */
+    margin-right: 0.1em;
+    text-shadow: 2px 2px 8px #FF0000
+} 
+.page-one{
+    width: 100%;
+    /* height: 110vh; */
+    display: flex;
+    flex-direction: row;
+    /* background: var(--bg-color); */
+}
+.hero-header-img{
+    background: url("https://assets.codepen.io/t-1/element5-digital-dwcC-OJ-bRs-unsplash.jpg");
+    background-size: cover;
+    /* background-size: 30%; */
+    background-repeat: no-repeat;
+    background-position:top;
+    flex: 2;
+    
+    /* height: 100vh; */
+    /* width: 50%; */
+}
+.article-meta{
+    margin:50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+}
+.article-tags{
+    margin: 10px 0;
+}
+.article-tags .tag{
+    background-color: dodgerblue;
+    padding: 4px;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: 300;
+}
+.catogs{
+    background-color: crimson !important;
+}
+.featured{
+    background-color: teal!important;
+}
+hr{
+    border: none;
+	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/5175/hr-01.png') no-repeat center;
+	height: 40px;
+	margin: 5em 0;
+}
+.hero-header-title-block{
+    background-color: var(--bg-color);
+    flex: 3;
+    padding: 10px 10px 20px 10px;
+    text-align: center;
+}
+.hero-header-title-block .headline{
+    margin-top: 20px;
+    font-family: 'Metal Mania', cursive;
+    
+    font-size: 9em;
+    letter-spacing: 10px;
+    color: var(--primary-color);
+    /* text-shadow: 2px 2px 8px #FF0000; */
+    animation-name:text-glow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes text-glow {
+    0% {text-shadow: 1px 1px 7px #FF0000;}
+    15% {text-shadow: 2px 2px 8px #FF0000;}
+    25% {text-shadow: 4px 4px 9px #FF0000;}
+    50% {text-shadow: 6px 6px 9px #FF0000;}
+    75% {text-shadow: 4px 4px 8px #FF0000;}
+    100% {text-shadow: 1px 1px 7px #FF0000;}
+    
+}
+.hero-header-title-block .headline span{
+    color: var(--smoke);
+}
+.hero-header-title-block .subhead{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--smoke);
+    /* text-shadow: 2px 2px 8px #FF0000; */
+    animation-name:text-glow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.hero-header-title-block article{
+    text-align: justify;
+    column-width: 14em;
+	column-gap: 1.33em;
+	padding: 0 1em;
+    color: var(--secondary-color);
+}
+/* pages */
+.page-two, .page-three, .page-four{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+
+    width: 100%;
+    padding: 50px; 
+}
+.page-two{
+    background-color: rgb(45, 87, 211);
+}
+.page-three{
+    background-color: var(--bg-color);
+}
+.page-four{
+    background-color: rgb(58, 47, 124);
+}
+.page-two h2{
+    padding: 10px;
+    font-size: 3.4em;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--primary-color);
+}
+.page-two article{
+    text-align: justify;
+    column-width: 14em;
+	column-gap: 1.33em;
+	padding: 0 1em;
+    color: rgb(237, 237, 237);
+}
+
+.page-two article figure img{
+    width: 100%;
+    background-size: cover;
+    margin: 10px 0 0 0; 
+}
+
+.page-three h2{
+    padding: 10px;
+    font-size: 3.4em;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--primary-color);
+}
+.page-three article{
+    text-align: justify;
+    column-width: 14em;
+	column-gap: 1.33em;
+	padding: 0 1em;
+    color: var(--secondary-color);
+}
+.page-three article figure img{
+    width: 100%;
+    background-size: cover;
+    margin: 10px 0 0 0; 
+}
+
+.page-four h2{
+    padding: 10px;
+    font-size: 3.4em;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--primary-color);
+}
+.page-four article{
+    text-align: justify;
+    column-width: 14em;
+	column-gap: 1.33em;
+	padding: 0 1em;
+    color: var(--secondary-color);
+}
+.page-four article figure img{
+    width: 100%;
+    background-size: cover;
+    margin: 10px 0 0 0; 
+}
+/* media query */
+@media screen and (max-width:950px) {
+    .page-one{
+        flex-direction: column;
+    }
+    .hero-header-img{
+        flex: none;
+        height: 30vh;
+        width: 100%;
+        background-size: 100%;
+        background-position:center;
+    }
+    .hero-header-title-block{
+        padding: 20px;
+    }
+    .hero-header-title-block .headline{
+        font-size: 6em;
+        margin-top: 5px;
+    }
+    .hero-header-title-block .subhead{
+        font-size: 20px;
+    }
+    .page-two, .page-three, .page-four{
+        flex-direction: column;
+        padding: 20px;
+    }
+}
