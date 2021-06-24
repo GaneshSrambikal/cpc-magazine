@@ -29,16 +29,18 @@ p{
     line-height: 1.5;
 }
 figure{
+    margin: 10px 0;
     position: relative;
+    border: 2px solid var(--primary-color);
+    background-color: var(--bg-color);
 }
 figcaption{
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 10px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 100;
     font-style: italic;
-    margin-bottom: 10px;
     color: var(--primary-color);
 }
 article .first:first-of-type:first-letter{
@@ -46,29 +48,19 @@ article .first:first-of-type:first-letter{
 	float: left;
 	font-size: 3em;
 	line-height: 1;
-	/* margin-top: -0.2em;
-	margin-bottom: -0.2em;
-	margin-right: 0.1em; */
     margin-right: 0.1em;
-    text-shadow: 2px 2px 8px #FF0000
 } 
 .page-one{
     width: 100%;
-    /* height: 110vh; */
     display: flex;
     flex-direction: row;
-    /* background: var(--bg-color); */
 }
 .hero-header-img{
     background: url("https://assets.codepen.io/t-1/element5-digital-dwcC-OJ-bRs-unsplash.jpg");
     background-size: cover;
-    /* background-size: 30%; */
     background-repeat: no-repeat;
     background-position:top;
     flex: 2;
-    
-    /* height: 100vh; */
-    /* width: 50%; */
 }
 .article-meta{
     margin:50px 0;
@@ -98,7 +90,7 @@ hr{
     border: none;
 	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/5175/hr-01.png') no-repeat center;
 	height: 40px;
-	margin: 5em 0;
+	margin: 4em 0;
 }
 .hero-header-title-block{
     background-color: var(--bg-color);
@@ -109,11 +101,9 @@ hr{
 .hero-header-title-block .headline{
     margin-top: 20px;
     font-family: 'Metal Mania', cursive;
-    
     font-size: 9em;
     letter-spacing: 10px;
     color: var(--primary-color);
-    /* text-shadow: 2px 2px 8px #FF0000; */
     animation-name:text-glow;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -135,7 +125,6 @@ hr{
     font-weight: 400;
     font-style: italic;
     color: var(--smoke);
-    /* text-shadow: 2px 2px 8px #FF0000; */
     animation-name:text-glow;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -183,7 +172,6 @@ hr{
 .page-two article figure img{
     width: 100%;
     background-size: cover;
-    margin: 10px 0 0 0; 
 }
 
 .page-three h2{
@@ -202,7 +190,6 @@ hr{
 .page-three article figure img{
     width: 100%;
     background-size: cover;
-    margin: 10px 0 0 0; 
 }
 
 .page-four h2{
@@ -221,7 +208,20 @@ hr{
 .page-four article figure img{
     width: 100%;
     background-size: cover;
-    margin: 10px 0 0 0; 
+}
+footer{
+    background-color: var(--bg-color);
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: 1em;
+}
+footer p a{
+    text-decoration: none;
+    color: var(--primary-color);
 }
 /* media query */
 @media screen and (max-width:950px) {
